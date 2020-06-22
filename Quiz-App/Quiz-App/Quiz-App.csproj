@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1A3343D-2A67-4BAD-9094-68282AF6B681}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quiz_App</RootNamespace>
+    <AssemblyName>Quiz-App</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>E:\New folder\Guna\Guna.UI-Framework-Lib\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminForm\AdminSubForms\AdminForm_AddQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\AdminSubForms\AdminForm_AddQuestion.Designer.cs">
+      <DependentUpon>AdminForm_AddQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\AdminSubForms\AdminForm_DeleteQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\AdminSubForms\AdminForm_DeleteQuestion.Designer.cs">
+      <DependentUpon>AdminForm_DeleteQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\AdminSubForms\AdminForm_UpdateQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\AdminSubForms\AdminForm_UpdateQuestion.Designer.cs">
+      <DependentUpon>AdminForm_UpdateQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\AdminSubForms\AdminForm_ViewQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\AdminSubForms\AdminForm_ViewQuestion.Designer.cs">
+      <DependentUpon>AdminForm_ViewQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\mainAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\mainAdminForm.Designer.cs">
+      <DependentUpon>mainAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameForm\GameSubForms\GameForm_OptionGamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForm\GameSubForms\GameForm_OptionGamForm.Designer.cs">
+      <DependentUpon>GameForm_OptionGamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameForm\GameSubForms\GameForm_PlayGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForm\GameSubForms\GameForm_PlayGame.Designer.cs">
+      <DependentUpon>GameForm_PlayGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameForm\GameSubForms\GameForm_ResultGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForm\GameSubForms\GameForm_ResultGame.Designer.cs">
+      <DependentUpon>GameForm_ResultGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameForm\mainGameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForm\mainGameForm.Designer.cs">
+      <DependentUpon>mainGameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySQL_Data_Base\MySqlDB.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignupForm\signupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignupForm\signupForm.Designer.cs">
+      <DependentUpon>signupForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminForm\AdminSubForms\AdminForm_AddQuestion.resx">
+      <DependentUpon>AdminForm_AddQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\AdminSubForms\AdminForm_DeleteQuestion.resx">
+      <DependentUpon>AdminForm_DeleteQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\AdminSubForms\AdminForm_UpdateQuestion.resx">
+      <DependentUpon>AdminForm_UpdateQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\AdminSubForms\AdminForm_ViewQuestion.resx">
+      <DependentUpon>AdminForm_ViewQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\mainAdminForm.resx">
+      <DependentUpon>mainAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForm\GameSubForms\GameForm_OptionGamForm.resx">
+      <DependentUpon>GameForm_OptionGamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForm\GameSubForms\GameForm_PlayGame.resx">
+      <DependentUpon>GameForm_PlayGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForm\GameSubForms\GameForm_ResultGame.resx">
+      <DependentUpon>GameForm_ResultGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForm\mainGameForm.resx">
+      <DependentUpon>mainGameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SignupForm\signupForm.resx">
+      <DependentUpon>signupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quiz_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Username.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
