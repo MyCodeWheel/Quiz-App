@@ -169,4 +169,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ***
 License
 =======
-The source code is released under the [MIT Licence](https://choosealicense.com/licenses/mit/)
+The source code is released under the [MIT Licence](https://github.com/MyCodeWheel/Quiz-App/blob/master/LICENSE)
